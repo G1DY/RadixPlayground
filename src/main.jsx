@@ -3,12 +3,13 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import "@radix-ui/themes/styles.css";
-import { Theme } from "@radix-ui/themes";
+import { Theme, ThemePanel } from "@radix-ui/themes";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Theme>
+    <Theme accentColor="crimson" grayColor="sand" radius="large" scaling="95%">
       <App />
+      <ThemePanel />
     </Theme>
   </StrictMode>
 );
