@@ -1,9 +1,10 @@
+import { Flex, Text, Button } from "@radix-ui/themes";
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline bg-amber-50">Hello World!</h1>
-      <p className="text-3xl">Testing</p>
-    </div>
+    <Flex direction="column" gap="2">
+      <Text>Hello from Radix Themes :)</Text>
+      <Button>Let's go</Button>
+    </Flex>
   );
 };
 export default App;
